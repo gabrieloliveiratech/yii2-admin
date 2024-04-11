@@ -174,7 +174,7 @@ Authorization: Bearer seu_token_de_acesso
 - **Response:**
 ```json
 {
-    "message": "Customer deleted successfully"
+   204 No Content
 }
 ```
 
@@ -288,7 +288,7 @@ Authorization: Bearer seu_token_de_acesso
 - **Response:**
 ```json
 {
-    "message": "Product deleted successfully"
+   204 No Content
 }
 ```
 
