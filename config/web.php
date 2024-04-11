@@ -30,6 +30,7 @@ $config = [
             'loginUrl' => null,
         ],
         'errorHandler' => [
+            'class' => 'app\components\ApiErrorHandler',
             'errorAction' => 'site/error',
         ],
         'mailer' => [
@@ -53,7 +54,6 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'api/user'],
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'api/customer'],
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'api/product'],
                 'POST api/auth/login' => 'api/auth/login',
